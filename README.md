@@ -20,6 +20,16 @@ Install a Python interpreter.
 
 Download the files as a zip using the green button, or clone the repository to your machine using Git.
 
+Uncompress .zip file and type:
+
+```
+cd <uncompressed folder>
+```
+
+2 options:
+
+1. Usage (normal)
+
 Install dependencies.
 
 ![dependencies](imagenes/graph.png)
@@ -33,6 +43,36 @@ Execute [seguimiento.py](seguimiento.py) Python file.
 ```
 python seguimiento.py
 ```
+
+2. Usage (virtually)
+
+Install pipenv package.
+
+```
+pip install pipenv
+```
+
+Install dependencies.
+
+![dependencies](imagenes/graph.png)
+
+```
+pipenv install -r requirements.txt
+```
+
+Execute [seguimiento.py](seguimiento.py) Python file with pipenv.
+
+```
+pipenv run python seguimiento.py
+```
+
+Remove the current virtual environment.
+
+```
+pipenv --rm
+```
+
+Remove Pipfile Pipfile.lock files.
 
 ## Note
 
